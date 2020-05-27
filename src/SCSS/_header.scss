@@ -1,0 +1,154 @@
+
+.header {
+  padding-top: 35px;
+  padding-bottom: 180px;
+  background: url("../img/header__clouds.png") no-repeat 0 100%,
+              url("../img/header__background .jpg") no-repeat;
+  background-size: 100% auto, cover;
+
+
+  &__top {
+
+  }
+
+  &__nav {
+
+  }
+
+  &__main {
+    margin-top: 40px;
+  }
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__attr {
+
+  }
+}
+
+.company-attr {
+  display: flex;
+  align-items: center;
+  &__text {
+    margin-top: 20px;
+    font-family: $HelveticaBold;
+    font-size: 60px;
+    color: $white;
+    margin-left: 40px;
+
+  }
+}
+
+.nav-menu {
+  max-width: 735px;
+  width: 100%;
+
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+    max-width: 650px;
+    margin: 15px 0 0 auto;
+    //margin-bottom: 0;
+  }
+
+  &__item {
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    top: 0;
+    transition: .4s;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 3px;
+      background-color: $white;
+      bottom: 0;
+      transform: rotate(-180deg);
+      transition: .3s width;
+      left: 50%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 3px;
+      background-color: $white;
+      bottom: 0;
+      right: 50%;
+      transition: .3s width;
+
+    }
+    &:hover {
+      top: -5px;
+    }
+    &:hover::before,
+    &:hover::after {
+      width: 50%;
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 5px;
+  }
+
+  &__link {
+    font-family: $HelveticaRegular;
+    font-size: 22px;
+    color: $white;
+    text-decoration: none;
+    position: relative;
+
+
+  }
+}
+
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content {
+  max-width: 570px;
+  &__title {
+    font-family: $HelveticaRegular;
+    font-size: 49px;
+    color: $white;
+    line-height: 1.3;
+  }
+  &__preview {
+    margin-top: 90px;
+    font-family: $HelveticaRegular;
+    font-size: 18px;
+    color: $white;
+    line-height: 1.3;
+  }
+  &__link {
+    margin-top: 70px;
+    display: block;
+    background-color: $orangeBtn;
+    border-radius: 34px;
+    max-width: 255px;
+    text-align: center;
+    padding: 15px 0;
+    font-family: $HelveticaRegular;
+    font-size: 18px;
+    color: $white;
+    text-decoration: none;
+
+  }
+}
+
+.header-imac {
+  &__img {
+    margin-top: 45px;
+  }
+}
