@@ -3,9 +3,8 @@
   padding-top: 35px;
   padding-bottom: 180px;
   background: url("../img/header__clouds.png") no-repeat 0 100%,
-              url("../img/header__background .jpg") no-repeat;
+             linear-gradient(to right,#e9536f, #e98d67);
   background-size: 100% auto, cover;
-
 
   &__top {
 
@@ -17,6 +16,11 @@
 
   &__main {
     margin-top: 40px;
+  }
+
+  &__canvas {
+    position: absolute;
+    z-index: 0;
   }
 }
 
