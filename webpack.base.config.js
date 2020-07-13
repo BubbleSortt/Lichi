@@ -15,7 +15,7 @@ module.exports = {
         paths: PATHS
     },
     entry: {
-        app: ['babel-polyfill', PATHS.src]
+        app: ['babel-polyfill', PATHS.src + '/index.js']
     },
     output: {
         filename: `js/[name].js`,

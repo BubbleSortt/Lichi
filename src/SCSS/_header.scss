@@ -2,7 +2,7 @@
 .header {
   padding-top: 35px;
   padding-bottom: 180px;
-  background: url("../img/header__clouds.png") no-repeat 0 100%,
+  background: url("../img/header__clouds.png") no-repeat 0 101%,
              linear-gradient(to right,#e9536f, #e98d67);
   background-size: 100% auto, cover;
 
@@ -39,9 +39,8 @@
   &__text {
     margin-top: 20px;
     font-family: $HelveticaBold;
-    font-size: 60px;
+    font-size: 63px;
     color: $white;
-    margin-left: 40px;
 
   }
 }
@@ -50,6 +49,9 @@
   max-width: 735px;
   width: 100%;
 
+  @media (max-width: 1600px) {
+    max-width: 600px;
+  }
 
   &__list {
     display: flex;
@@ -110,7 +112,9 @@
     text-decoration: none;
     position: relative;
 
-
+    @media (max-width: 1600px) {
+      font-size: 17px;
+    }
   }
 }
 
@@ -127,6 +131,10 @@
     font-size: 49px;
     color: $white;
     line-height: 1.3;
+
+    @media (max-width: 1600px) {
+      font-size: 40px;
+    }
   }
   &__preview {
     margin-top: 90px;
@@ -134,7 +142,13 @@
     font-size: 18px;
     color: $white;
     line-height: 1.3;
+
+    @media (max-width: 1600px) {
+      max-width: 390px;
+    }
   }
+
+
   &__link {
     margin-top: 70px;
     display: block;
@@ -148,11 +162,23 @@
     color: $white;
     text-decoration: none;
 
+    @media (max-width: 1600px) {
+      font-size: 15px;
+    }
+
   }
 }
 
 .header-imac {
   &__img {
     margin-top: 45px;
+    @media (max-width: 1600px) {
+      width: 600px;
+      height: auto;
+    }
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
   }
 }

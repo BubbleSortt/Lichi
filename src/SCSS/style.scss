@@ -1,6 +1,11 @@
 @import "fonts";
 @import "variables";
 @import "header";
+@import "generator";
+@import "scale";
+@import "description";
+@import "feedback";
+@import "footer";
 
 html {
   line-height: $mainLineHeight;
@@ -17,11 +22,26 @@ html {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
+* {
+  outline: none !important;
+}
+
 .container {
-  width: 100%;
+  //width: 100%;
   flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
   max-width: 1575px;
   padding: 0 15px;
+  @media (max-width: 1600px) {
+    max-width: 1215px;
+  }
+}
+
+.hidden {
+  display: none;
 }
