@@ -1,0 +1,114 @@
+.scale {
+  padding-top: 40px;
+  padding-bottom: 140px;
+  background:linear-gradient(to right,#e9536f, #e98d67);
+  background-size: cover;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding-bottom: 100px;
+  }
+  @media (max-width: 585px) {
+    padding-bottom: 70px;
+    padding-top: 10px;
+  }
+
+  &__content {
+    max-width: 650px;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
+
+  &__clouds {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: -2px;
+    background: url("../img/back-clouds.svg") no-repeat 0 100%;
+    background-size: 100% auto;
+    @media (max-width: 480px) {
+      background-size: 267% auto;
+    }
+  }
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    color: $white;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-family: $HelveticaRegular;
+    font-size: 17px;
+    color: $white;
+    @media (max-width: 768px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    margin-top: 30px;
+  }
+}
+
+.scale-list {
+  display: flex;
+  max-width: 650px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 585px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__item {
+    @media (max-width: 740px) {
+      flex-basis: 33.33%;
+    }
+    @media (max-width: 585px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    font-family: $HelveticaBold;
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 0;
+    word-break: break-word;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__content {
+    max-width: 200px;
+    @media (max-width: 585px) {
+    max-width: 240px;
+    }
+  }
+
+  &__desc {
+    font-family: $HelveticaRegular;
+    font-size: 17px;
+    color: $white;
+    margin-top: 5px;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+}
