@@ -23,13 +23,17 @@
 
   &__clouds {
     position: absolute;
-    width: 100%;
+    min-width: 100vw;
     height: 150px;
     bottom: -2px;
     background: url("../img/back-clouds.svg") no-repeat 0 100%;
     background-size: 100% auto;
+    @media (max-width: 1024px) {
+      height: 100px;
+    }
     @media (max-width: 480px) {
       background-size: 267% auto;
+      background-position: -5px 100%;
     }
   }
 

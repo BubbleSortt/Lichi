@@ -6,6 +6,7 @@
 @import "description";
 @import "feedback";
 @import "footer";
+@import "burger-menu";
 
 html {
   line-height: $mainLineHeight;
@@ -44,4 +45,8 @@ body {
 
 .hidden {
   display: none;
+}
+
+.scroll-lock {
+  position: fixed;
 }
